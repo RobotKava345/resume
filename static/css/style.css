@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400;600;700&family=Space+Grotesk:wght@300;400;500;600;700&display=swap');
-
+ 
 :root {
     --bg: #0d0f14;
     --bg2: #131620;
@@ -14,12 +14,11 @@
     --font-mono: 'JetBrains Mono', monospace;
     --font-body: 'Space Grotesk', sans-serif;
 }
-
-/* ========== BASE ========== */
+ 
 * { margin: 0; padding: 0; box-sizing: border-box; }
-
+ 
 html { scroll-behavior: smooth; }
-
+ 
 body {
     background-color: var(--bg);
     color: var(--text);
@@ -27,14 +26,12 @@ body {
     line-height: 1.7;
     overflow-x: hidden;
 }
-
-/* ========== SCROLLBAR ========== */
+ 
 ::-webkit-scrollbar { width: 6px; }
 ::-webkit-scrollbar-track { background: var(--bg); }
 ::-webkit-scrollbar-thumb { background: var(--border); border-radius: 3px; }
 ::-webkit-scrollbar-thumb:hover { background: var(--accent); }
-
-/* ========== TYPOGRAPHY ========== */
+ 
 h1, h2, h3, h4, h5 {
     font-family: var(--font-body);
     font-weight: 700;
@@ -43,8 +40,7 @@ h1, h2, h3, h4, h5 {
 .text-accent { color: var(--accent) !important; }
 a { color: var(--accent); text-decoration: none; transition: opacity 0.2s; }
 a:hover { opacity: 0.8; color: var(--accent); }
-
-/* ========== NAVBAR ========== */
+ 
 #mainNav {
     background: rgba(13, 15, 20, 0.85);
     backdrop-filter: blur(20px);
@@ -52,7 +48,7 @@ a:hover { opacity: 0.8; color: var(--accent); }
     padding: 14px 0;
     transition: all 0.3s;
 }
-
+ 
 .navbar-brand {
     font-family: var(--font-mono);
     font-weight: 700;
@@ -62,7 +58,7 @@ a:hover { opacity: 0.8; color: var(--accent); }
 }
 .brand-bracket { color: var(--accent); }
 .brand-name { color: var(--text); }
-
+ 
 .nav-link {
     color: var(--text-muted) !important;
     font-size: 0.9rem;
@@ -76,7 +72,7 @@ a:hover { opacity: 0.8; color: var(--accent); }
     color: var(--accent) !important;
     background: var(--accent-dim);
 }
-
+ 
 .btn-outline-accent {
     color: var(--accent);
     border: 1px solid var(--accent);
@@ -92,13 +88,12 @@ a:hover { opacity: 0.8; color: var(--accent); }
     background: var(--accent-dim);
     color: var(--accent);
 }
-
+ 
 .navbar-toggler {
     border-color: var(--border);
     color: var(--text-muted);
 }
-
-/* ========== BUTTONS ========== */
+ 
 .btn-accent {
     background: var(--accent);
     color: #0d0f14;
@@ -132,8 +127,7 @@ a:hover { opacity: 0.8; color: var(--accent); }
     background: var(--accent-dim);
 }
 .btn-sm { padding: 6px 14px !important; font-size: 0.82rem !important; }
-
-/* ========== HERO ========== */
+ 
 .hero-section {
     position: relative;
     min-height: 100vh;
@@ -141,7 +135,7 @@ a:hover { opacity: 0.8; color: var(--accent); }
     overflow: hidden;
     padding-top: 0;
 }
-
+ 
 .hero-noise {
     position: absolute;
     inset: 0;
@@ -150,7 +144,7 @@ a:hover { opacity: 0.8; color: var(--accent); }
         radial-gradient(circle at 80% 20%, rgba(92, 107, 255, 0.05) 0%, transparent 50%);
     pointer-events: none;
 }
-
+ 
 .terminal-label {
     display: inline-flex;
     align-items: center;
@@ -170,7 +164,7 @@ a:hover { opacity: 0.8; color: var(--accent); }
 .terminal-dot.green { background: #3dd68c; }
 .terminal-dot.yellow { background: #e5c07b; }
 .terminal-dot.red { background: #e06c75; }
-
+ 
 .hero-greeting {
     font-family: var(--font-mono);
     color: var(--text-muted);
@@ -199,7 +193,7 @@ a:hover { opacity: 0.8; color: var(--accent); }
     line-height: 1.8;
 }
 .hero-actions { display: flex; gap: 12px; flex-wrap: wrap; }
-
+ 
 .hero-scroll-hint {
     position: absolute;
     bottom: 30px;
@@ -213,8 +207,7 @@ a:hover { opacity: 0.8; color: var(--accent); }
     0%, 100% { transform: translateX(-50%) translateY(0); }
     50% { transform: translateX(-50%) translateY(8px); }
 }
-
-/* Code card */
+ 
 .code-card {
     background: var(--card);
     border: 1px solid var(--border);
@@ -241,8 +234,7 @@ a:hover { opacity: 0.8; color: var(--accent); }
 .c-yellow { color: #e5c07b; }
 .c-accent { color: var(--accent); }
 .c-comment { color: #5c6370; font-style: italic; }
-
-/* ========== SECTION COMMON ========== */
+ 
 .section-prefix {
     font-family: var(--font-mono);
     font-size: 0.85rem;
@@ -255,10 +247,9 @@ a:hover { opacity: 0.8; color: var(--accent); }
     margin-bottom: 0;
     letter-spacing: -1px;
 }
-
-/* ========== SKILLS ========== */
+ 
 .skills-section { background: var(--bg2); }
-
+ 
 .skill-card {
     background: var(--card);
     border: 1px solid var(--border);
@@ -298,8 +289,7 @@ a:hover { opacity: 0.8; color: var(--accent); }
     border-radius: 4px;
     transition: width 1s ease;
 }
-
-/* ========== TAGS ========== */
+ 
 .tag {
     display: inline-block;
     background: var(--bg3);
@@ -318,10 +308,9 @@ a:hover { opacity: 0.8; color: var(--accent); }
     border-color: var(--accent);
     color: var(--accent);
 }
-
-/* ========== TIMELINE ========== */
+ 
 .timeline-section { background: var(--bg); }
-
+ 
 .timeline {
     position: relative;
     max-width: 700px;
@@ -372,8 +361,7 @@ a:hover { opacity: 0.8; color: var(--accent); }
 }
 .timeline-card h5 { font-size: 1rem; margin-bottom: 8px; }
 .timeline-card p { color: var(--text-muted); font-size: 0.9rem; margin-bottom: 12px; }
-
-/* ========== PROJECTS PAGE ========== */
+ 
 .page-header { background: var(--bg); padding-top: 90px !important; }
 .page-title {
     font-size: clamp(2rem, 5vw, 3.5rem);
@@ -382,7 +370,7 @@ a:hover { opacity: 0.8; color: var(--accent); }
     margin-bottom: 8px;
 }
 .page-subtitle { font-size: 1rem; }
-
+ 
 .project-featured {
     background: var(--card);
     border: 1px solid var(--border);
@@ -415,7 +403,7 @@ a:hover { opacity: 0.8; color: var(--accent); }
 .window-dot.green { background: #3dd68c; }
 .window-body { padding: 20px; }
 .window-title { font-family: var(--font-mono); font-size: 0.75rem; }
-
+ 
 .featured-badge {
     display: inline-block;
     background: var(--accent-dim);
@@ -428,12 +416,12 @@ a:hover { opacity: 0.8; color: var(--accent); }
 }
 .project-name { font-size: 1.8rem; font-weight: 700; margin-bottom: 12px; letter-spacing: -0.5px; }
 .project-desc { color: var(--text-muted); line-height: 1.7; margin-bottom: 16px; }
-
+ 
 .divider {
     height: 1px;
     background: linear-gradient(90deg, transparent, var(--border), transparent);
 }
-
+ 
 .project-card {
     background: var(--card);
     border: 1px solid var(--border);
@@ -468,8 +456,7 @@ a:hover { opacity: 0.8; color: var(--accent); }
     padding: 3px 8px;
     border-radius: 4px;
 }
-
-/* ========== CONTACT PAGE ========== */
+ 
 .contact-intro {
     color: var(--text-muted);
     font-size: 1rem;
@@ -513,7 +500,7 @@ a:hover { opacity: 0.8; color: var(--accent); }
     text-decoration: none;
 }
 .contact-value:hover { color: var(--accent); }
-
+ 
 .availability-badge {
     display: inline-flex;
     align-items: center;
@@ -537,7 +524,7 @@ a:hover { opacity: 0.8; color: var(--accent); }
     0%, 100% { box-shadow: 0 0 0 0 rgba(0,229,160,0.4); }
     50% { box-shadow: 0 0 0 6px rgba(0,229,160,0); }
 }
-
+ 
 .form-card {
     background: var(--card);
     border: 1px solid var(--border);
@@ -572,7 +559,7 @@ a:hover { opacity: 0.8; color: var(--accent); }
     outline: none;
 }
 .code-input::placeholder { color: var(--text-muted) !important; }
-
+ 
 .success-message {
     background: rgba(0, 229, 160, 0.08);
     border: 1px solid rgba(0, 229, 160, 0.3);
@@ -582,8 +569,7 @@ a:hover { opacity: 0.8; color: var(--accent); }
     font-size: 0.85rem;
     color: var(--accent);
 }
-
-/* ========== FOOTER ========== */
+ 
 footer {
     background: var(--bg2);
     border-top: 1px solid var(--border);
@@ -601,8 +587,7 @@ footer {
     transition: color 0.2s;
 }
 .footer-link:hover { color: var(--accent); }
-
-/* ========== ANIMATIONS ========== */
+ 
 .fade-up {
     opacity: 0;
     transform: translateY(20px);
@@ -611,8 +596,7 @@ footer {
 @keyframes fadeUp {
     to { opacity: 1; transform: translateY(0); }
 }
-
-/* ========== RESPONSIVE ========== */
+ 
 @media (max-width: 768px) {
     .hero-section { padding-top: 90px; }
     .hero-name { letter-spacing: -1px; }
@@ -621,8 +605,7 @@ footer {
     .timeline::before { left: 0; }
     .timeline-dot { left: -29px; }
 }
-
-/* ========== LIGHT THEME ========== */
+ 
 [data-theme="light"] {
     --bg: #f4f6fb;
     --bg2: #eaecf4;
@@ -635,45 +618,45 @@ footer {
     --text: #1a1e2e;
     --text-muted: #5a637a;
 }
-
+ 
 [data-theme="light"] body {
     background-color: var(--bg);
     color: var(--text);
 }
-
+ 
 [data-theme="light"] #mainNav {
     background: rgba(244, 246, 251, 0.9);
     border-bottom-color: var(--border);
 }
-
+ 
 [data-theme="light"] .hero-noise {
     background-image:
         radial-gradient(circle at 20% 50%, rgba(0, 165, 114, 0.08) 0%, transparent 50%),
         radial-gradient(circle at 80% 20%, rgba(74, 88, 224, 0.06) 0%, transparent 50%);
 }
-
+ 
 [data-theme="light"] .hero-section { background: var(--bg); }
 [data-theme="light"] .skills-section { background: var(--bg2); }
 [data-theme="light"] .timeline-section { background: var(--bg); }
-
+ 
 [data-theme="light"] .terminal-label {
     background: var(--card);
     border-color: var(--border);
 }
-
+ 
 [data-theme="light"] .code-card {
     background: #1a1e2e;
     border-color: #252b3b;
     box-shadow: 0 20px 60px rgba(0, 0, 0, 0.15);
 }
-
+ 
 [data-theme="light"] .code-block { color: #e2e8f0; }
-
+ 
 [data-theme="light"] .hero-name { color: var(--text); }
 [data-theme="light"] h1, [data-theme="light"] h2,
 [data-theme="light"] h3, [data-theme="light"] h4,
 [data-theme="light"] h5 { color: var(--text); }
-
+ 
 [data-theme="light"] .skill-card,
 [data-theme="light"] .timeline-card,
 [data-theme="light"] .project-card,
@@ -684,7 +667,7 @@ footer {
     border-color: var(--border);
     box-shadow: 0 2px 12px rgba(0,0,0,0.06);
 }
-
+ 
 [data-theme="light"] .project-window { background: #1a1e2e; border-color: #252b3b; }
 [data-theme="light"] .window-bar { background: #0d1117; border-bottom-color: #252b3b; color: #718096; }
 [data-theme="light"] .window-bar .window-title { color: #718096; }
@@ -697,38 +680,37 @@ footer {
 [data-theme="light"] .window-body .c-yellow { color: #e5c07b; }
 [data-theme="light"] .window-body .c-accent { color: #00e5a0; }
 [data-theme="light"] .window-body .c-comment{ color: #5c6370; }
-
+ 
 [data-theme="light"] .tag {
     background: var(--bg3);
     border-color: var(--border);
     color: var(--text-muted);
 }
-
+ 
 [data-theme="light"] footer {
     background: var(--bg2);
     border-top-color: var(--border);
 }
-
+ 
 [data-theme="light"] .navbar-toggler { border-color: var(--border); }
-
+ 
 [data-theme="light"] .form-window-bar {
     background: var(--bg2);
     border-bottom-color: var(--border);
 }
-
+ 
 [data-theme="light"] .code-input {
     background: var(--bg2) !important;
     border-color: var(--border) !important;
     color: var(--text) !important;
 }
-
+ 
 [data-theme="light"] .page-header { background: var(--bg); }
 [data-theme="light"] .contact-intro { background: var(--card); border-color: var(--border); }
-
+ 
 [data-theme="light"] ::-webkit-scrollbar-track { background: var(--bg2); }
 [data-theme="light"] ::-webkit-scrollbar-thumb { background: var(--border); }
-
-/* ========== THEME TOGGLE BUTTON ========== */
+ 
 .btn-theme-toggle {
     width: 38px;
     height: 38px;
@@ -749,8 +731,7 @@ footer {
     color: var(--accent);
     background: var(--accent-dim);
 }
-
-/* Smooth theme transition */
+ 
 *, *::before, *::after {
     transition:
         background-color 0.3s ease,
@@ -758,7 +739,6 @@ footer {
         color 0.2s ease,
         box-shadow 0.3s ease;
 }
-/* But keep animation transitions intact */
 .fade-up, .skill-bar-fill, .hero-scroll-hint,
 .availability-dot, .btn-accent, .btn-ghost {
     transition: unset;
@@ -766,90 +746,76 @@ footer {
 .btn-accent { transition: background 0.25s, transform 0.25s, box-shadow 0.25s; }
 .btn-ghost  { transition: border-color 0.25s, color 0.25s, background 0.25s; }
 .skill-bar-fill { transition: width 1s ease; }
-
-/* ========== FIX: Bootstrap text-muted override ========== */
-/* Dark theme — Bootstrap's default is already fine, but let's be explicit */
+ 
 .text-muted {
     color: var(--text-muted) !important;
 }
-
+ 
 small, .small {
     color: var(--text-muted);
 }
-
-/* Light theme — boost contrast so all muted text is readable */
+ 
 [data-theme="light"] .text-muted {
     color: #3d4a5c !important;
 }
-
+ 
 [data-theme="light"] small,
 [data-theme="light"] .small {
     color: #3d4a5c;
 }
-
+ 
 [data-theme="light"] .page-subtitle {
     color: #3d4a5c !important;
 }
-
-/* skill percent labels */
+ 
 [data-theme="light"] .skill-card small {
     color: #3d4a5c;
     font-weight: 500;
 }
-
-/* timeline paragraph text */
+ 
 [data-theme="light"] .timeline-card p {
     color: #3d4a5c;
 }
-
-/* project card descriptions */
+ 
 [data-theme="light"] .project-card p,
 [data-theme="light"] .project-desc {
     color: #3d4a5c;
 }
-
-/* code-label hint text in forms */
+ 
 [data-theme="light"] .code-label .text-muted {
     color: #6272a0 !important;
 }
-
-/* window-bar filename text */
+ 
 [data-theme="light"] .window-bar .text-muted,
 [data-theme="light"] .form-window-bar .text-muted,
 [data-theme="light"] .terminal-label .text-muted {
     color: #6272a0 !important;
 }
-
-/* hero greeting */
+ 
 [data-theme="light"] .hero-greeting {
     color: #4a5568;
 }
-
-/* nav links default state */
+ 
 [data-theme="light"] .nav-link {
     color: #3d4a5c !important;
 }
-
-/* footer text */
+ 
 [data-theme="light"] .footer-text {
     color: #3d4a5c;
 }
-
+ 
 [data-theme="light"] .footer-link {
     color: #3d4a5c;
 }
-
-/* contact label */
+ 
 [data-theme="light"] .contact-label {
     color: #4a5568;
 }
-
-/* hero-section desc */
+ 
 [data-theme="light"] .hero-desc {
     color: #3d4a5c;
 }
-
-/* btn-ghost */
+ 
 [data-theme="light"] .btn-ghost {
     color: #3d4a5c;
     border-color: #c0c8dc;
@@ -858,26 +824,22 @@ small, .small {
     color: var(--accent);
     border-color: var(--accent);
 }
-
-/* btn-outline-accent */
+ 
 [data-theme="light"] .btn-outline-accent {
     color: var(--accent);
     border-color: var(--accent);
 }
-
-/* btn-theme-toggle */
+ 
 [data-theme="light"] .btn-theme-toggle {
     color: #3d4a5c;
     background: #fff;
     border-color: #c0c8dc;
 }
-
-/* section-prefix */
+ 
 [data-theme="light"] .section-prefix {
     color: #4a5568;
 }
-
-/* hero-role tag opacity */
+ 
 [data-theme="light"] .role-tag {
     color: var(--accent);
     opacity: 0.6;
