@@ -1,0 +1,126 @@
+{% extends "base.html" %}
+{% block title %}Контакти — Кудінов Кирило{% endblock %}
+
+{% block content %}
+
+<section class="page-header py-5 mt-5">
+    <div class="container">
+        <div class="terminal-label mb-3">
+            <span class="terminal-dot green"></span>
+            <span class="terminal-dot yellow"></span>
+            <span class="terminal-dot red"></span>
+            <span class="ms-2 text-muted small">~/contact/index.html</span>
+        </div>
+        <p class="section-prefix"><span class="text-accent">$</span> contact --dev</p>
+        <h1 class="page-title">Зв'язатись</h1>
+        <p class="page-subtitle text-muted">Відкритий до пропозицій та співпраці</p>
+    </div>
+</section>
+
+<section class="contact-section pb-5">
+    <div class="container">
+        <div class="row g-5">
+
+            
+            <div class="col-lg-5">
+                <div class="contact-intro mb-4">
+                    <p>Шукаю першу роботу або стажування у веб-розробці. Готовий навчатись, вкладатись і рости разом із командою.</p>
+                </div>
+
+                <div class="contact-card mb-3">
+                    <div class="contact-card-icon">
+                        <i class="bi bi-telephone-fill"></i>
+                    </div>
+                    <div>
+                        <p class="contact-label">Телефон</p>
+                        <a href="tel:+380509919424" class="contact-value">+38 (050) 991-94-24</a>
+                    </div>
+                </div>
+
+                <div class="contact-card mb-3">
+                    <div class="contact-card-icon">
+                        <i class="bi bi-telegram"></i>
+                    </div>
+                    <div>
+                        <p class="contact-label">Telegram</p>
+                        <a href="https://t.me/gg_nn_kiri" target="_blank" class="contact-value">@gg_nn_kiri</a>
+                    </div>
+                </div>
+
+                <div class="contact-card mb-3">
+                    <div class="contact-card-icon">
+                        <i class="bi bi-github"></i>
+                    </div>
+                    <div>
+                        <p class="contact-label">GitHub</p>
+                        <a href="https://github.com/RobotKava345" target="_blank" class="contact-value">RobotKava345</a>
+                    </div>
+                </div>
+
+                <div class="contact-card mb-3">
+                    <div class="contact-card-icon">
+                        <i class="bi bi-geo-alt-fill"></i>
+                    </div>
+                    <div>
+                        <p class="contact-label">Місто</p>
+                        <span class="contact-value">Харків, Україна 🇺🇦</span>
+                    </div>
+                </div>
+
+                <div class="availability-badge mt-4">
+                    <span class="availability-dot"></span>
+                    Доступний для роботи / стажування
+                </div>
+            </div>
+
+            
+            <div class="col-lg-7">
+                <div class="form-card">
+                    <div class="form-window-bar">
+                        <span class="window-dot red"></span>
+                        <span class="window-dot yellow"></span>
+                        <span class="window-dot green"></span>
+                        <span class="ms-2 text-muted small">new_message.py</span>
+                    </div>
+                    <div class="p-4">
+                        <h5 class="mb-4"><span class="text-accent">#</span> Написати повідомлення</h5>
+                        <form id="contactForm">
+                            <div class="mb-3">
+                                <label class="form-label code-label">name <span class="text-accent">= </span><span class="text-muted">"твоє ім'я"</span></label>
+                                <input type="text" class="form-control code-input" placeholder="Іван Іваненко" required>
+                            </div>
+                            <div class="mb-3">
+                                <label class="form-label code-label">email <span class="text-accent">= </span><span class="text-muted">"твій email"</span></label>
+                                <input type="email" class="form-control code-input" placeholder="ivan@example.com" required>
+                            </div>
+                            <div class="mb-3">
+                                <label class="form-label code-label">subject <span class="text-accent">= </span><span class="text-muted">"тема"</span></label>
+                                <select class="form-select code-input">
+                                    <option>Пропозиція роботи</option>
+                                    <option>Стажування</option>
+                                    <option>Питання про проєкт</option>
+                                    <option>Просто привіт</option>
+                                </select>
+                            </div>
+                            <div class="mb-4">
+                                <label class="form-label code-label">message <span class="text-accent">= </span><span class="text-muted">"""</span></label>
+                                <textarea class="form-control code-input" rows="4" placeholder="Твоє повідомлення..." required></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-accent w-100">
+                                <i class="bi bi-send me-2"></i>Відправити
+                                <span class="ms-2 text-muted small"># send()</span>
+                            </button>
+                        </form>
+                        <div id="formSuccess" class="success-message mt-3 d-none">
+                            <i class="bi bi-check-circle text-accent me-2"></i>
+                            Повідомлення надіслано! Відповім якнайшвидше.
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+{% endblock %}

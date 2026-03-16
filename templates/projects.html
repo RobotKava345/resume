@@ -1,0 +1,188 @@
+{% extends "base.html" %}
+{% block title %}Проєкти — Кудінов Кирило{% endblock %}
+
+{% block content %}
+
+<section class="page-header py-5 mt-5">
+    <div class="container">
+        <div class="terminal-label mb-3">
+            <span class="terminal-dot green"></span>
+            <span class="terminal-dot yellow"></span>
+            <span class="terminal-dot red"></span>
+            <span class="ms-2 text-muted small">~/projects/index.html</span>
+        </div>
+        <p class="section-prefix"><span class="text-accent">$</span> ls ~/projects/</p>
+        <h1 class="page-title">Мої проєкти</h1>
+        <p class="page-subtitle text-muted">Від ігор на pygame до веб-додатків на Flask</p>
+    </div>
+</section>
+
+<section class="projects-section pb-5">
+    <div class="container">
+
+        <!-- Featured -->
+        <div class="project-featured mb-5">
+            <div class="row align-items-center g-4">
+                <div class="col-lg-6">
+                    <div class="project-window">
+                        <div class="window-bar">
+                            <span class="window-dot red"></span>
+                            <span class="window-dot yellow"></span>
+                            <span class="window-dot green"></span>
+                            <span class="window-title ms-2">SB Gear — strikeball shop</span>
+                        </div>
+                        <div class="window-body">
+<pre><code><span class="c-purple">@app</span>.route(<span class="c-yellow">'/catalog'</span>)
+<span class="c-purple">def</span> <span class="c-blue">catalog</span>():
+    products = db.<span class="c-green">get_all</span>()
+    <span class="c-purple">return</span> render_template(
+        <span class="c-yellow">'catalog.html'</span>,
+        products=products
+    )
+
+<span class="c-comment"># Flask + SQLite + Bootstrap</span>
+<span class="c-comment"># Full CRUD, reviews, dark mode</span></code></pre>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="featured-badge mb-2">⭐ Головний проєкт</div>
+                    <h3 class="project-name">SB Gear Shop</h3>
+                    <p class="project-desc">
+                        Повноцінний інтернет-магазин страйкбольного спорядження.
+                        Каталог товарів, система відгуків, темна тема, адаптивний дизайн.
+                        Сервер на Flask, база даних SQLite, шаблонізатор Jinja2.
+                    </p>
+                    <div class="mb-3">
+                        <span class="tag">Python</span>
+                        <span class="tag">Flask</span>
+                        <span class="tag">SQLite</span>
+                        <span class="tag">Bootstrap 5</span>
+                        <span class="tag">Jinja2</span>
+                    </div>
+                    <a href="https://github.com/RobotKava345" target="_blank" class="btn btn-accent">
+                        <i class="bi bi-github me-2"></i>Дивитись на GitHub
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="divider mb-5"></div>
+
+        <!-- Game projects label -->
+        <p class="section-prefix mb-3"><span class="text-accent">//</span> ігри на pygame — мій шлях до Python</p>
+
+        <div class="row g-4">
+
+            <!-- Minecraft clone -->
+            <div class="col-md-6 col-lg-3">
+                <div class="project-card">
+                    <div class="project-card-header">
+                        <i class="bi bi-grid-3x3-gap project-icon"></i>
+                        <div class="project-links">
+                            <a href="https://github.com/RobotKava345" target="_blank"><i class="bi bi-github"></i></a>
+                        </div>
+                    </div>
+                    <h5 class="mt-3">Minecraft Clone</h5>
+                    <p class="text-muted small">Клон Minecraft на Python + Pygame. Система блоків, карта, гравець. Власні текстури блоків, логіка руху та взаємодії зі світом.</p>
+                    <div class="mt-auto pt-3">
+                        <span class="tag">Python</span>
+                        <span class="tag">Pygame</span>
+                        <span class="tag">2D / 3D</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Hotline Miami clone -->
+            <div class="col-md-6 col-lg-3">
+                <div class="project-card">
+                    <div class="project-card-header">
+                        <i class="bi bi-controller project-icon"></i>
+                        <div class="project-links">
+                            <a href="https://github.com/RobotKava345" target="_blank"><i class="bi bi-github"></i></a>
+                        </div>
+                    </div>
+                    <h5 class="mt-3">Hotline Miami Clone</h5>
+                    <p class="text-muted small">Клон Hotline Miami на Python. Top-down геймплей, рівні у вигляді лабіринтів, механіка зіткнень та переміщення.</p>
+                    <div class="mt-auto pt-3">
+                        <span class="tag">Python</span>
+                        <span class="tag">Pygame</span>
+                        <span class="tag">Maze Gen</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Space Shooter -->
+            <div class="col-md-6 col-lg-3">
+                <div class="project-card">
+                    <div class="project-card-header">
+                        <i class="bi bi-rocket-takeoff project-icon"></i>
+                        <div class="project-links">
+                            <a href="https://github.com/RobotKava345" target="_blank"><i class="bi bi-github"></i></a>
+                        </div>
+                    </div>
+                    <h5 class="mt-3">Space Shooter</h5>
+                    <p class="text-muted small">Аркадний космічний шутер. Хвилі ворогів, система очок, ефекти вибухів. Класичний жанр, реалізований з нуля на Python.</p>
+                    <div class="mt-auto pt-3">
+                        <span class="tag">Python</span>
+                        <span class="tag">Pygame</span>
+                        <span class="tag">Game Dev</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Image Editor -->
+            <div class="col-md-6 col-lg-3">
+                <div class="project-card">
+                    <div class="project-card-header">
+                        <i class="bi bi-image project-icon"></i>
+                        <div class="project-links">
+                            <a href="https://github.com/RobotKava345" target="_blank"><i class="bi bi-github"></i></a>
+                        </div>
+                    </div>
+                    <h5 class="mt-3">Image Editor</h5>
+                    <p class="text-muted small">Редактор зображень на Python. Базові фільтри, трансформації та обробка пікселів. Робота з бібліотекою Pillow / PIL.</p>
+                    <div class="mt-auto pt-3">
+                        <span class="tag">Python</span>
+                        <span class="tag">Pillow</span>
+                        <span class="tag">GUI</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Next project placeholder -->
+            <div class="col-md-6 col-lg-4">
+                <div class="project-card project-card-upcoming">
+                    <div class="project-card-header">
+                        <i class="bi bi-database project-icon"></i>
+                        <div class="upcoming-badge">скоро</div>
+                    </div>
+                    <h5 class="mt-3">FastAPI REST API</h5>
+                    <p class="text-muted small">В розробці: повноцінний REST API на FastAPI з авторизацією через JWT, автодокументацією Swagger та тестами pytest.</p>
+                    <div class="mt-auto pt-3">
+                        <span class="tag">FastAPI</span>
+                        <span class="tag">JWT</span>
+                        <span class="tag">REST</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- GitHub link -->
+            <div class="col-md-6 col-lg-8">
+                <div class="project-card d-flex align-items-center justify-content-center text-center">
+                    <div>
+                        <i class="bi bi-github text-accent" style="font-size:2.8rem"></i>
+                        <h5 class="mt-3">Більше проєктів на GitHub</h5>
+                        <p class="text-muted small mb-3">Весь мій код — відкритий. Заходь, дивись, форкай.</p>
+                        <a href="https://github.com/RobotKava345" target="_blank" class="btn btn-accent">
+                            <i class="bi bi-github me-2"></i>RobotKava345
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+{% endblock %}

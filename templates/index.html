@@ -1,0 +1,193 @@
+{% extends "base.html" %}
+{% block title %}Кудінов Кирило — Junior Web Developer{% endblock %}
+
+{% block content %}
+
+
+<section class="hero-section">
+    <div class="hero-noise"></div>
+    <div class="container position-relative">
+        <div class="row min-vh-100 align-items-center">
+            <div class="col-lg-7 hero-text">
+                <div class="terminal-label mb-3 fade-up" style="animation-delay:0.1s">
+                    <span class="terminal-dot green"></span>
+                    <span class="terminal-dot yellow"></span>
+                    <span class="terminal-dot red"></span>
+                    <span class="ms-2 text-muted small">~/resume/index.html</span>
+                </div>
+                <p class="hero-greeting fade-up" style="animation-delay:0.2s">
+                    <span class="text-accent">$</span> whoami
+                </p>
+                <h1 class="hero-name fade-up" style="animation-delay:0.35s">
+                    Кудінов<br><span class="text-accent">Кирило</span>
+                </h1>
+                <p class="hero-role fade-up" style="animation-delay:0.5s">
+                    <span class="role-tag">&lt;</span>Junior Web Developer<span class="role-tag">/&gt;</span>
+                </p>
+                <p class="hero-desc fade-up" style="animation-delay:0.65s">
+                    4 роки в Python — від ігор на Pygame до веб-розробки.
+                    Довго шукав своє місце: пробував геймдев, обробку зображень, різні напрямки.
+                    Зупинився на веб — і це <strong class="text-accent">моє</strong>.
+                    Зараз будую повноцінні сайти на Flask + Bootstrap.
+                    Студент школи програмування <strong class="text-accent">LOGIKA</strong>.
+                </p>
+                <div class="hero-actions fade-up" style="animation-delay:0.8s">
+                    <a href="/projects" class="btn btn-accent me-3">
+                        <i class="bi bi-folder2-open me-2"></i>Мої проєкти
+                    </a>
+                    <a href="/contact" class="btn btn-ghost">
+                        <i class="bi bi-envelope me-2"></i>Зв'язатись
+                    </a>
+                </div>
+            </div>
+            <div class="col-lg-5 d-none d-lg-flex justify-content-center align-items-center">
+                <div class="code-card fade-up" style="animation-delay:0.5s">
+<pre class="code-block"><code><span class="c-purple">const</span> <span class="c-blue">developer</span> = {
+  <span class="c-green">name</span>: <span class="c-yellow">"Кирило Кудінов"</span>,
+  <span class="c-green">role</span>: <span class="c-yellow">"Junior Web Dev"</span>,
+  <span class="c-green">experience</span>: <span class="c-yellow">"4 роки навчання"</span>,
+  <span class="c-green">skills</span>: [
+    <span class="c-yellow">"HTML"</span>, <span class="c-yellow">"CSS"</span>,
+    <span class="c-yellow">"Python"</span>, <span class="c-yellow">"Flask"</span>,
+    <span class="c-yellow">"Bootstrap"</span>, <span class="c-yellow">"SQLite"</span>
+  ],
+  <span class="c-green">school</span>: <span class="c-yellow">"LOGIKA"</span>,
+  <span class="c-green">status</span>: <span class="c-accent">available</span> <span class="c-purple">✓</span>
+};</code></pre>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="hero-scroll-hint">
+        <i class="bi bi-chevron-double-down"></i>
+    </div>
+</section>
+
+
+<section class="skills-section py-5">
+    <div class="container">
+        <div class="section-header text-center mb-5">
+            <p class="section-prefix"><span class="text-accent">//</span> навички</p>
+            <h2 class="section-title">Stack & Tools</h2>
+        </div>
+
+        <div class="row g-4 justify-content-center">
+            
+            <div class="col-md-4 col-sm-6">
+                <div class="skill-card">
+                    <div class="skill-icon">
+                        <i class="bi bi-layout-text-window-reverse"></i>
+                    </div>
+                    <h4 class="skill-name">Frontend</h4>
+                    <div class="skill-tags">
+                        <span class="tag">HTML5</span>
+                        <span class="tag">CSS3</span>
+                        <span class="tag">Bootstrap</span>
+                        <span class="tag">Responsive Design</span>
+                        <span class="tag">Flexbox/Grid</span>
+                    </div>
+                    <div class="skill-bar mt-3">
+                        <div class="skill-bar-fill" style="width:80%"></div>
+                    </div>
+                    <small class="text-muted">80% — впевнено</small>
+                </div>
+            </div>
+            
+            <div class="col-md-4 col-sm-6">
+                <div class="skill-card">
+                    <div class="skill-icon">
+                        <i class="bi bi-server"></i>
+                    </div>
+                    <h4 class="skill-name">Backend</h4>
+                    <div class="skill-tags">
+                        <span class="tag">Python</span>
+                        <span class="tag">Flask</span>
+                        <span class="tag">SQLite</span>
+                        <span class="tag">Jinja2</span>
+                        <span class="tag">REST API</span>
+                    </div>
+                    <div class="skill-bar mt-3">
+                        <div class="skill-bar-fill" style="width:65%"></div>
+                    </div>
+                    <small class="text-muted">65% — активно вчусь</small>
+                </div>
+            </div>
+            
+            <div class="col-md-4 col-sm-6">
+                <div class="skill-card">
+                    <div class="skill-icon">
+                        <i class="bi bi-tools"></i>
+                    </div>
+                    <h4 class="skill-name">Tools</h4>
+                    <div class="skill-tags">
+                        <span class="tag">Git</span>
+                        <span class="tag">GitHub</span>
+                        <span class="tag">VS Code</span>
+                        <span class="tag">Windows</span>
+                        <span class="tag">Figma</span>
+                    </div>
+                    <div class="skill-bar mt-3">
+                        <div class="skill-bar-fill" style="width:70%"></div>
+                    </div>
+                    <small class="text-muted">70% — в процесі</small>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<section class="timeline-section py-5">
+    <div class="container">
+        <div class="section-header text-center mb-5">
+            <p class="section-prefix"><span class="text-accent">//</span> шлях</p>
+            <h2 class="section-title">Навчання & Досвід</h2>
+        </div>
+        <div class="timeline">
+            <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-card">
+                    <span class="timeline-date">2021 — зараз</span>
+                    <h5>Школа програмування LOGIKA</h5>
+                    <p>Міжнародна школа програмування. Вивчив основи Python, веб-розробки, алгоритмів та баз даних. Пройшов понад 400 годин практичних занять.</p>
+                    <span class="tag">Python</span>
+                    <span class="tag">Web Dev</span>
+                    <span class="tag">Algorithms</span>
+                </div>
+            </div>
+            <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-card">
+                    <span class="timeline-date">2022 — 2024</span>
+                    <h5>Пошук свого напрямку</h5>
+                    <p>Довго пробував різне: геймдев на Pygame (Minecraft-клон, Hotline Miami, Space Shooter), обробку зображень, утиліти. Кожен проєкт давав досвід і наближав до відповіді — чим хочу займатись.</p>
+                    <span class="tag">Pygame</span>
+                    <span class="tag">Game Dev</span>
+                    <span class="tag">Pillow</span>
+                </div>
+            </div>
+            <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-card">
+                    <span class="timeline-date">2024 — зараз</span>
+                    <h5>Веб-розробка — мій напрямок</h5>
+                    <p>Зупинився на веб. Розробив інтернет-магазин SB Gear на Flask + SQLite + Bootstrap. Публікую проєкти на GitHub, вдосконалюю стек щодня.</p>
+                    <span class="tag">Flask</span>
+                    <span class="tag">SQLite</span>
+                    <span class="tag">Bootstrap</span>
+                </div>
+            </div>
+            <div class="timeline-item">
+                <div class="timeline-dot active"></div>
+                <div class="timeline-card active">
+                    <span class="timeline-date">2025 — зараз</span>
+                    <h5>Активний пошук першої роботи</h5>
+                    <p>Готовий до стажування або junior-позиції. Швидко навчаюсь, мотивований, вмію в код-рев'ю та командну роботу через GitHub.</p>
+                    <span class="tag tag-accent">Open to work ✓</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+{% endblock %}
