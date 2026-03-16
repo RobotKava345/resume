@@ -85,3 +85,7 @@ document.querySelectorAll('a[href^="#"]').forEach(a => {
         if (target) { e.preventDefault(); target.scrollIntoView({ behavior: 'smooth' }); }
     });
 });
+
+// Footer year
+const yearEl = document.getElementById('footerYear');
+if (yearEl) yearEl.textContent = new Date().getFullYear();

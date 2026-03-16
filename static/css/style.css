@@ -15,7 +15,7 @@
     --font-body: 'Space Grotesk', sans-serif;
 }
 
-
+/* ========== BASE ========== */
 * { margin: 0; padding: 0; box-sizing: border-box; }
 
 html { scroll-behavior: smooth; }
@@ -28,13 +28,13 @@ body {
     overflow-x: hidden;
 }
 
-
+/* ========== SCROLLBAR ========== */
 ::-webkit-scrollbar { width: 6px; }
 ::-webkit-scrollbar-track { background: var(--bg); }
 ::-webkit-scrollbar-thumb { background: var(--border); border-radius: 3px; }
 ::-webkit-scrollbar-thumb:hover { background: var(--accent); }
 
-
+/* ========== TYPOGRAPHY ========== */
 h1, h2, h3, h4, h5 {
     font-family: var(--font-body);
     font-weight: 700;
@@ -44,6 +44,7 @@ h1, h2, h3, h4, h5 {
 a { color: var(--accent); text-decoration: none; transition: opacity 0.2s; }
 a:hover { opacity: 0.8; color: var(--accent); }
 
+/* ========== NAVBAR ========== */
 #mainNav {
     background: rgba(13, 15, 20, 0.85);
     backdrop-filter: blur(20px);
@@ -97,7 +98,7 @@ a:hover { opacity: 0.8; color: var(--accent); }
     color: var(--text-muted);
 }
 
-
+/* ========== BUTTONS ========== */
 .btn-accent {
     background: var(--accent);
     color: #0d0f14;
@@ -132,7 +133,7 @@ a:hover { opacity: 0.8; color: var(--accent); }
 }
 .btn-sm { padding: 6px 14px !important; font-size: 0.82rem !important; }
 
-
+/* ========== HERO ========== */
 .hero-section {
     position: relative;
     min-height: 100vh;
@@ -213,7 +214,7 @@ a:hover { opacity: 0.8; color: var(--accent); }
     50% { transform: translateX(-50%) translateY(8px); }
 }
 
-
+/* Code card */
 .code-card {
     background: var(--card);
     border: 1px solid var(--border);
@@ -241,7 +242,7 @@ a:hover { opacity: 0.8; color: var(--accent); }
 .c-accent { color: var(--accent); }
 .c-comment { color: #5c6370; font-style: italic; }
 
-
+/* ========== SECTION COMMON ========== */
 .section-prefix {
     font-family: var(--font-mono);
     font-size: 0.85rem;
@@ -255,6 +256,7 @@ a:hover { opacity: 0.8; color: var(--accent); }
     letter-spacing: -1px;
 }
 
+/* ========== SKILLS ========== */
 .skills-section { background: var(--bg2); }
 
 .skill-card {
@@ -297,7 +299,7 @@ a:hover { opacity: 0.8; color: var(--accent); }
     transition: width 1s ease;
 }
 
-
+/* ========== TAGS ========== */
 .tag {
     display: inline-block;
     background: var(--bg3);
@@ -317,6 +319,7 @@ a:hover { opacity: 0.8; color: var(--accent); }
     color: var(--accent);
 }
 
+/* ========== TIMELINE ========== */
 .timeline-section { background: var(--bg); }
 
 .timeline {
@@ -370,7 +373,7 @@ a:hover { opacity: 0.8; color: var(--accent); }
 .timeline-card h5 { font-size: 1rem; margin-bottom: 8px; }
 .timeline-card p { color: var(--text-muted); font-size: 0.9rem; margin-bottom: 12px; }
 
-
+/* ========== PROJECTS PAGE ========== */
 .page-header { background: var(--bg); padding-top: 90px !important; }
 .page-title {
     font-size: clamp(2rem, 5vw, 3.5rem);
@@ -466,7 +469,7 @@ a:hover { opacity: 0.8; color: var(--accent); }
     border-radius: 4px;
 }
 
-
+/* ========== CONTACT PAGE ========== */
 .contact-intro {
     color: var(--text-muted);
     font-size: 1rem;
@@ -580,7 +583,7 @@ a:hover { opacity: 0.8; color: var(--accent); }
     color: var(--accent);
 }
 
-
+/* ========== FOOTER ========== */
 footer {
     background: var(--bg2);
     border-top: 1px solid var(--border);
@@ -599,7 +602,7 @@ footer {
 }
 .footer-link:hover { color: var(--accent); }
 
-
+/* ========== ANIMATIONS ========== */
 .fade-up {
     opacity: 0;
     transform: translateY(20px);
@@ -609,7 +612,7 @@ footer {
     to { opacity: 1; transform: translateY(0); }
 }
 
-
+/* ========== RESPONSIVE ========== */
 @media (max-width: 768px) {
     .hero-section { padding-top: 90px; }
     .hero-name { letter-spacing: -1px; }
@@ -619,7 +622,7 @@ footer {
     .timeline-dot { left: -29px; }
 }
 
-
+/* ========== LIGHT THEME ========== */
 [data-theme="light"] {
     --bg: #f4f6fb;
     --bg2: #eaecf4;
@@ -725,7 +728,7 @@ footer {
 [data-theme="light"] ::-webkit-scrollbar-track { background: var(--bg2); }
 [data-theme="light"] ::-webkit-scrollbar-thumb { background: var(--border); }
 
-
+/* ========== THEME TOGGLE BUTTON ========== */
 .btn-theme-toggle {
     width: 38px;
     height: 38px;
@@ -747,7 +750,7 @@ footer {
     background: var(--accent-dim);
 }
 
-
+/* Smooth theme transition */
 *, *::before, *::after {
     transition:
         background-color 0.3s ease,
@@ -755,7 +758,7 @@ footer {
         color 0.2s ease,
         box-shadow 0.3s ease;
 }
-
+/* But keep animation transitions intact */
 .fade-up, .skill-bar-fill, .hero-scroll-hint,
 .availability-dot, .btn-accent, .btn-ghost {
     transition: unset;
@@ -764,7 +767,8 @@ footer {
 .btn-ghost  { transition: border-color 0.25s, color 0.25s, background 0.25s; }
 .skill-bar-fill { transition: width 1s ease; }
 
-
+/* ========== FIX: Bootstrap text-muted override ========== */
+/* Dark theme — Bootstrap's default is already fine, but let's be explicit */
 .text-muted {
     color: var(--text-muted) !important;
 }
@@ -773,7 +777,7 @@ small, .small {
     color: var(--text-muted);
 }
 
-
+/* Light theme — boost contrast so all muted text is readable */
 [data-theme="light"] .text-muted {
     color: #3d4a5c !important;
 }
@@ -787,46 +791,46 @@ small, .small {
     color: #3d4a5c !important;
 }
 
-
+/* skill percent labels */
 [data-theme="light"] .skill-card small {
     color: #3d4a5c;
     font-weight: 500;
 }
 
-
+/* timeline paragraph text */
 [data-theme="light"] .timeline-card p {
     color: #3d4a5c;
 }
 
-
+/* project card descriptions */
 [data-theme="light"] .project-card p,
 [data-theme="light"] .project-desc {
     color: #3d4a5c;
 }
 
-
+/* code-label hint text in forms */
 [data-theme="light"] .code-label .text-muted {
     color: #6272a0 !important;
 }
 
-
+/* window-bar filename text */
 [data-theme="light"] .window-bar .text-muted,
 [data-theme="light"] .form-window-bar .text-muted,
 [data-theme="light"] .terminal-label .text-muted {
     color: #6272a0 !important;
 }
 
-
+/* hero greeting */
 [data-theme="light"] .hero-greeting {
     color: #4a5568;
 }
 
-
+/* nav links default state */
 [data-theme="light"] .nav-link {
     color: #3d4a5c !important;
 }
 
-
+/* footer text */
 [data-theme="light"] .footer-text {
     color: #3d4a5c;
 }
@@ -835,16 +839,17 @@ small, .small {
     color: #3d4a5c;
 }
 
-
+/* contact label */
 [data-theme="light"] .contact-label {
     color: #4a5568;
 }
 
-
+/* hero-section desc */
 [data-theme="light"] .hero-desc {
     color: #3d4a5c;
 }
 
+/* btn-ghost */
 [data-theme="light"] .btn-ghost {
     color: #3d4a5c;
     border-color: #c0c8dc;
@@ -854,25 +859,25 @@ small, .small {
     border-color: var(--accent);
 }
 
-
+/* btn-outline-accent */
 [data-theme="light"] .btn-outline-accent {
     color: var(--accent);
     border-color: var(--accent);
 }
 
-
+/* btn-theme-toggle */
 [data-theme="light"] .btn-theme-toggle {
     color: #3d4a5c;
     background: #fff;
     border-color: #c0c8dc;
 }
 
-
+/* section-prefix */
 [data-theme="light"] .section-prefix {
     color: #4a5568;
 }
 
-
+/* hero-role tag opacity */
 [data-theme="light"] .role-tag {
     color: var(--accent);
     opacity: 0.6;
